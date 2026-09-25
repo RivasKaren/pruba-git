@@ -1,12 +1,13 @@
 from flask import Flask
 
-nombre = "Alejandro"
+nombre = "Karen"
 
-app = Flask(__name__)
+app = Flask("app_conflicto")
 
 @app.route('/')
 def index():
-    return f"<h1>Bienvenido al portal universitario, {nombre}!</h1>"
+    return f"<h1>Cambio en feature-api</h1>"
 
-if __name__ == '__main__':
-    app.route(host='0.0.0.0', port=5000)
+@app.route('/api/status')
+def status():
+    return {"status": "ok"}
