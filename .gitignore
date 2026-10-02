@@ -1,0 +1,11 @@
+# Secretos
+.env
+
+# Dependencias
+node_modules/
+.venv/
+
+# Basura del sistema y editores
+.DS_Store
+.vscode/
+__pycache__/
